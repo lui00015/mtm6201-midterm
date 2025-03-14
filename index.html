@@ -9,30 +9,30 @@
   <body>
     <!-- Header Section -->
     <header>
-      <nav>
+      <nav aria-label="Main navigation">
         <div class="logo">Dwello</div>
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" aria-label="Home">Home</a></li>
+          <li><a href="about.html" aria-label="About">About</a></li>
+          <li><a href="contact.html" aria-label="Contact">Contact</a></li>
         </ul>
         <div class="nav-right">
-          <div class="search-icon">🔍</div>
-          <button class="sign-in-button">Sign In</button>
+          <div class="search-icon" aria-label="Search">🔍</div>
+          <button class="sign-in-button" aria-label="Sign In">Sign In</button>
         </div>
       </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" aria-label="Hero section">
       <div class="hero-container">
         <div class="hero-text">
           <h1>Find Your Dream Car</h1>
           <p>
-            Explore our curated selection ofexquisite car<br />meticulously
+            Explore our curated selection of exquisite car<br />meticulously
             tailored to your unique dream car vision.
           </p>
-          <button class="cta-button">Sign Up</button>
+          <button class="cta-button" aria-label="Sign Up">Sign Up</button>
         </div>
 
         <div class="hero-image">
@@ -42,29 +42,44 @@
     </section>
 
     <!-- Filter Bar -->
-    <div class="filter-bar">
+    <div class="filter-bar" aria-label="Filter bar">
       <div class="filter-container">
         <div class="filter">
-          <span class="icon">📍</span>
-          <input type="text" id="location" placeholder="Location" />
+          <span class="icon" aria-label="Location icon">📍</span>
+          <input
+            type="text"
+            id="location"
+            placeholder="Location"
+            aria-label="Enter location"
+          />
         </div>
 
         <div class="filter">
-          <span class="icon">🏠</span>
-          <input type="text" id="type" placeholder="Type" />
+          <span class="icon" aria-label="Type icon">🏠</span>
+          <input
+            type="text"
+            id="type"
+            placeholder="Type"
+            aria-label="Enter type"
+          />
         </div>
 
         <div class="filter">
-          <span class="icon">💲</span>
-          <input type="text" id="price-range" placeholder="Price Range" />
+          <span class="icon" aria-label="Price range icon">💲</span>
+          <input
+            type="text"
+            id="price-range"
+            placeholder="Price Range"
+            aria-label="Enter price range"
+          />
         </div>
 
-        <button class="sign-up-button">Sign up</button>
+        <button class="sign-up-button" aria-label="Sign up">Sign up</button>
       </div>
     </div>
 
     <!-- Statistics Section -->
-    <section class="statistics">
+    <section class="statistics" aria-label="Statistics section">
       <div class="statistics-container">
         <div class="statistics-image">
           <img src="images/Dreamcar-image.jpg" alt="Dream Car" />
@@ -79,15 +94,15 @@
             becomes a reality.
           </p>
           <div class="stats">
-            <div class="stat">
+            <div class="stat" aria-label="Cars available">
               <h3>8K+</h3>
               <p>Cars Available</p>
             </div>
-            <div class="stat">
+            <div class="stat" aria-label="Cars sold">
               <h3>6K+</h3>
               <p>Cars Sold</p>
             </div>
-            <div class="stat">
+            <div class="stat" aria-label="Trusted agents">
               <h3>2K+</h3>
               <p>Trusted Agents</p>
             </div>
@@ -97,14 +112,14 @@
     </section>
 
     <!-- Why Choose Us Section -->
-    <section class="why-choose-us">
+    <section class="why-choose-us" aria-label="Why choose us section">
       <h2>Why Choose Us</h2>
       <p class="subheading">
         Elevating Your Home Buying Experience with Expertise, Integrity, and
         Unmatched Personalized Service
       </p>
       <div class="features-container">
-        <div class="feature">
+        <div class="feature" aria-label="Expert guidance">
           <i class="fa-solid fa-location-dot"></i>
           <h3>Expert Guidance</h3>
           <p>
@@ -112,21 +127,21 @@
             experience.
           </p>
         </div>
-        <div class="feature">
+        <div class="feature" aria-label="Personalized service">
           <h3>Personalized Service</h3>
           <p>
             Our services adapt to your unique needs, making your journey
             stress-free.
           </p>
         </div>
-        <div class="feature">
+        <div class="feature" aria-label="Transparent process">
           <h3>Transparent Process</h3>
           <p>
             Stay informed with our clear and honest approach to buying your
             home.
           </p>
         </div>
-        <div class="feature">
+        <div class="feature" aria-label="Exceptional support">
           <h3>Exceptional Support</h3>
           <p>
             Providing peace of mind with our responsive and attentive customer
@@ -137,50 +152,65 @@
     </section>
 
     <!-- Popular Car Section -->
-    <section class="cars">
+    <section class="cars" aria-label="Popular cars section">
       <h2>Our Popular Cars</h2>
       <div class="car-list">
         <!-- Car 1 -->
-        <div class="car">
+        <div class="car" aria-label="San Francisco car">
           <img src="images/car1.jpg" alt="San Francisco Car" />
           <div class="car-details">
             <h3>San Francisco, California</h3>
             <p>Sedan | 2023 Model</p>
             <p class="price">$50,000</p>
-            <a href="#" class="cta-button">Sign Up</a>
+            <a
+              href="#"
+              class="cta-button"
+              aria-label="Sign up for San Francisco car"
+              >Sign Up</a
+            >
           </div>
         </div>
 
         <!-- Car 2 -->
-        <div class="car">
+        <div class="car" aria-label="Beverly Hills car">
           <img src="images/car2.jpg" alt="Beverly Hills Car" />
           <div class="car-details">
             <h3>Beverly Hills, California</h3>
             <p>SUV | 2022 Model</p>
             <p class="price">$70,000</p>
-            <a href="#" class="cta-button">Sign Up</a>
+            <a
+              href="#"
+              class="cta-button"
+              aria-label="Sign up for Beverly Hills car"
+              >Sign Up</a
+            >
           </div>
         </div>
 
         <!-- Car 3 -->
-        <div class="car">
+        <div class="car" aria-label="Palo Alto car">
           <img src="images/car3.jpg" alt="Palo Alto Car" />
           <div class="car-details">
             <h3>Palo Alto, California</h3>
             <p>Luxury | 2023 Model</p>
             <p class="price">$120,000</p>
-            <a href="#" class="cta-button">Sign Up</a>
+            <a
+              href="#"
+              class="cta-button"
+              aria-label="Sign up for Palo Alto car"
+              >Sign Up</a
+            >
           </div>
         </div>
       </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials">
+    <section class="testimonials" aria-label="Testimonials section">
       <h2>What People Say About Dwello</h2>
       <div class="testimonial-list">
         <!-- Testimonial 1 -->
-        <div class="testimonial">
+        <div class="testimonial" aria-label="Testimonial by Sarah Nguyen">
           <div class="testimonial-image">
             <img
               src="images/testimonial-bg1.jpg"
@@ -212,7 +242,7 @@
         </div>
 
         <!-- Testimonial 2 -->
-        <div class="testimonial">
+        <div class="testimonial" aria-label="Testimonial by Michael Rodriguez">
           <div class="testimonial-image">
             <img
               src="images/testimonial-bg2.jpg"
@@ -243,7 +273,7 @@
         </div>
 
         <!-- Testimonial 3 -->
-        <div class="testimonial">
+        <div class="testimonial" aria-label="Testimonial by Emily Johnson">
           <div class="testimonial-image">
             <img
               src="images/testimonial-bg3.jpg"
@@ -276,13 +306,15 @@
     </section>
 
     <!-- Footer Section -->
-    <footer>
+    <footer aria-label="Footer section">
       <p>Do You Have Any Questions? Get Help From Us</p>
-      <a href="contact.html" class="cta-button">Contact Us</a>
+      <a href="contact.html" class="cta-button" aria-label="Contact us"
+        >Contact Us</a
+      >
     </footer>
 
     <!-- New Section for Image Content -->
-    <section class="image-content">
+    <section class="image-content" aria-label="Image content section">
       <div class="image-content-container">
         <div class="left-content">
           <h2>DWELLO</h2>
@@ -291,7 +323,7 @@
 
         <!-- Right Side -->
         <div class="right-content">
-          <div class="column">
+          <div class="column" aria-label="About section">
             <h3>About</h3>
             <ul>
               <li>Our Story</li>
@@ -300,7 +332,7 @@
               <li>Resources</li>
             </ul>
           </div>
-          <div class="column">
+          <div class="column" aria-label="Support section">
             <h3>Support</h3>
             <ul>
               <li>FAQ</li>
@@ -309,7 +341,7 @@
               <li>Terms of Service</li>
             </ul>
           </div>
-          <div class="column">
+          <div class="column" aria-label="Find us section">
             <h3>Find Us</h3>
             <ul>
               <li>Events</li>
@@ -317,7 +349,7 @@
               <li>Newsletter</li>
             </ul>
           </div>
-          <div class="column">
+          <div class="column" aria-label="Our social section">
             <h3>Our Social</h3>
             <ul>
               <li>Instagram</li>

@@ -64,22 +64,22 @@
   <body>
     <!-- Header Section -->
     <header>
-      <nav>
+      <nav aria-label="Main navigation">
         <div class="logo">Dwello</div>
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" aria-label="Home">Home</a></li>
+          <li><a href="about.html" aria-label="About">About</a></li>
+          <li><a href="contact.html" aria-label="Contact">Contact</a></li>
         </ul>
         <div class="nav-right">
-          <div class="search-icon">🔍</div>
-          <button class="sign-in-button">Sign In</button>
+          <div class="search-icon" aria-label="Search">🔍</div>
+          <button class="sign-in-button" aria-label="Sign In">Sign In</button>
         </div>
       </nav>
     </header>
 
     <!-- Contact Section -->
-    <section class="contact">
+    <section class="contact" aria-label="Contact section">
       <h1>Contact Us</h1>
       <div class="contact-container">
         <div class="contact-info">
@@ -92,45 +92,73 @@
           <p><strong>Address:</strong> 15 West 3rd St. Media, Pa. 19063</p>
         </div>
 
-        <!-- 右側：填寫資料的表單 -->
-        <form class="contact-form">
+        <form class="contact-form" aria-label="Contact form">
           <div class="form-group">
             <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="firstName" required />
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              required
+              aria-label="First Name"
+            />
           </div>
           <div class="form-group">
             <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="lastName" required />
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              required
+              aria-label="Last Name"
+            />
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              aria-label="Email"
+            />
           </div>
           <div class="form-group">
             <label for="phone">Phone (optional)</label>
-            <input type="tel" id="phone" name="phone" />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              aria-label="Phone (optional)"
+            />
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              aria-label="Message"
+            ></textarea>
           </div>
-          <button type="submit" class="cta-button">Submit</button>
+          <button type="submit" class="cta-button" aria-label="Submit form">
+            Submit
+          </button>
         </form>
       </div>
     </section>
 
     <!-- New Section for Image Content -->
-    <section class="image-content">
+    <section class="image-content" aria-label="Image content section">
       <div class="image-content-container">
-        <!-- Left Side: DWELLO and Text -->
         <div class="left-content">
           <h2>DWELLO</h2>
           <p>Bringing you closer to your dream car, one click at a time.</p>
         </div>
 
-        <!-- Right Side: About, Support, Find Us, Our Social -->
         <div class="right-content">
-          <div class="column">
+          <div class="column" aria-label="About section">
             <h3>About</h3>
             <ul>
               <li>Our Story</li>
@@ -139,7 +167,7 @@
               <li>Resources</li>
             </ul>
           </div>
-          <div class="column">
+          <div class="column" aria-label="Support section">
             <h3>Support</h3>
             <ul>
               <li>FAQ</li>
@@ -148,7 +176,7 @@
               <li>Terms of Service</li>
             </ul>
           </div>
-          <div class="column">
+          <div class="column" aria-label="Find us section">
             <h3>Find Us</h3>
             <ul>
               <li>Events</li>
@@ -156,7 +184,7 @@
               <li>Newsletter</li>
             </ul>
           </div>
-          <div class="column">
+          <div class="column" aria-label="Our social section">
             <h3>Our Social</h3>
             <ul>
               <li>Instagram</li>
