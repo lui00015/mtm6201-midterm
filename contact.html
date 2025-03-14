@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Dwello</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      .contact-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .contact-info {
+        flex: 1;
+        max-width: 40%;
+        padding-right: 40px;
+      }
+      .contact-form {
+        flex: 1;
+        max-width: 50%;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .form-group textarea {
+        resize: vertical;
+        height: 100px;
+      }
+      .cta-button {
+        background: #ff6f61;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+      .cta-button:hover {
+        background: #e65a50;
+      }
+
+      /* Contact Us style */
+      .contact h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav>
+        <div class="logo">Dwello</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+          <div class="search-icon">🔍</div>
+          <button class="sign-in-button">Sign In</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <h1>Contact Us</h1>
+      <div class="contact-container">
+        <div class="contact-info">
+          <p>
+            Feel free to use the form or drop us an email. Old-fashioned phone
+            calls work too.
+          </p>
+          <p><strong>Phone:</strong> 484.324.2400</p>
+          <p><strong>Email:</strong> info@mediaproper.com</p>
+          <p><strong>Address:</strong> 15 West 3rd St. Media, Pa. 19063</p>
+        </div>
+
+        <!-- 右側：填寫資料的表單 -->
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="cta-button">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- New Section for Image Content -->
+    <section class="image-content">
+      <div class="image-content-container">
+        <!-- Left Side: DWELLO and Text -->
+        <div class="left-content">
+          <h2>DWELLO</h2>
+          <p>Bringing you closer to your dream car, one click at a time.</p>
+        </div>
+
+        <!-- Right Side: About, Support, Find Us, Our Social -->
+        <div class="right-content">
+          <div class="column">
+            <h3>About</h3>
+            <ul>
+              <li>Our Story</li>
+              <li>Careers</li>
+              <li>Our Team</li>
+              <li>Resources</li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3>Support</h3>
+            <ul>
+              <li>FAQ</li>
+              <li>Contact Us</li>
+              <li>Help Center</li>
+              <li>Terms of Service</li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3>Find Us</h3>
+            <ul>
+              <li>Events</li>
+              <li>Locations</li>
+              <li>Newsletter</li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3>Our Social</h3>
+            <ul>
+              <li>Instagram</li>
+              <li>Facebook</li>
+              <li>Twitter (x)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
